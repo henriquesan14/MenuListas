@@ -49,30 +49,22 @@ public class Lista2 {
 	}
 	
 	public void removeAluno(Aluno a){
-		Aluno temp=primeiro;
-		Aluno anterior=null;
-		
-		if(total==0){
-			System.out.println("lista vazia");
-			return;
-		}
-		
-		if (total==1){
-			primeiro=null;
-			return;
-		}
-	
-		for(int i=0;i<total;i++){
-			if(a.nome.equals(temp.nome)){
-				anterior.proximo=temp.proximo;
-				total--;
-				return;
-			}else{
-				System.out.println("to andando");
-				anterior=temp;
-				temp=temp.proximo;
-			}
-		}
+		Aluno remover = primeiro;
+        if(remover != null)
+            if(remover.nome.equals(a.nome))
+            {
+                primeiro = remover.proximo;
+            } else
+            {
+                while(remover.proximo != null && !remover.nome.equals(a.nome)) 
+                {
+                    remover = remover.proximo;
+                    total--;
+                }
+                if(remover.proximo != null)
+                    remover.proximo = remover.proximo.proximo;
+            }
+
 		
 		
 	}
