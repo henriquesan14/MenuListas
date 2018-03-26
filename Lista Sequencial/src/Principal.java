@@ -102,7 +102,7 @@ public class Principal {
 			listaencadeada.inserirNoInicio(a1);
 			System.out.println("Elemento inserido");
 			break;
-			case 2: listaencadeada.removeAluno(a1);System.out.println("Elemento removido");break;
+			case 2: listaencadeada.removeAluno(a1);System.out.println("Primeiro elemento removido");break;
 			case 3:listaencadeada.exibirLista();break;
 			case 4:menu();break;
 			default:System.out.println("Opção inválida");
