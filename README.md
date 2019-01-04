@@ -1,2 +1,2 @@
 # MenuListas
-Pequeno projeto de um menu de lista sequencial e encadeada.
+Pequeno projeto - Implementação das estrutura de dados Lista sequencial e encadeada.
